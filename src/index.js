@@ -26,7 +26,7 @@ const addSubmitListener = () => {
     let rating = parseInt(document.getElementById('new-rating').value);
     const comment = document.getElementById('new-comment').value;
 
-    // Validate the rating to be within the range of 0 to 10
+    // Validate rating to be within the range of 0 to 10
     if (rating < 0 || rating > 10 || isNaN(rating)) {
       alert('Please enter a valid rating between 0 and 10.');
       return;
